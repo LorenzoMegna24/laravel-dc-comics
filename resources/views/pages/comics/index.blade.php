@@ -13,6 +13,13 @@
         <h5 class="card-title">{{$elem->title}}</h5>
       </a>
       <p class="card-text">{{$elem->description}}</p>
+      <a href="{{route('comics.edit', $elem)}}" class="btn btn-warning">Modifica fumetto</a>
+
+      <form action="{{route('comics.destroy', $elem)}}" method="POST">
+        @csrf
+        @method('DELETE')
+        <button class="btn btn-danger">Elimina fumetto</button>
+      </form>
     </div>
   </div>
   @endforeach

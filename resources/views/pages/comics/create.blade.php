@@ -13,37 +13,37 @@
       @csrf
   
       <div class="form-group">
-        <label class="form-lable" for="">Title</label>
+        <label class="form-lable" for="title">Title</label>
         <input class="form-control" type="text" name="title">
       </div>
   
       <div class="form-group">
-        <label class="form-lable" for="">Description</label>
+        <label class="form-lable" for="description">Description</label>
         <textarea class="form-control" name="description" id="" cols="30" rows="10"></textarea>
       </div>
   
       <div class="form-group">
-        <label class="form-lable" for="">Thumb</label>
+        <label class="form-lable" for="thumb">Thumb</label>
         <input class="form-control" type="text" name="thumb">
       </div>
   
       <div class="form-group">
-        <label class="form-lable" for="">Price</label>
+        <label class="form-lable" for="price">Price</label>
         <input class="form-control" type="text" name="price">
       </div>
   
       <div class="form-group">
-        <label class="form-lable" for="">Series</label>
+        <label class="form-lable" for="series">Series</label>
         <input class="form-control" type="text" name="series">
       </div>
   
       <div class="form-group">
-        <label class="form-lable" for="">Sale date</label>
+        <label class="form-lable" for="sale_date">Sale date</label>
         <input class="form-control" type="text" name="sale_date">
       </div>
   
       <div class="form-group">
-        <label class="form-lable" for="">Type</label>
+        <label class="form-lable" for="type">Type</label>
         <input class="form-control" type="text" name="type">
       </div>
   
