@@ -18,9 +18,15 @@
       <form action="{{route('comics.destroy', $elem)}}" method="POST">
         @csrf
         @method('DELETE')
-        <button class="btn btn-danger">Elimina fumetto</button>
+        <button onclick="return cancellaElemento()" class="btn btn-danger">Elimina fumetto</button>
       </form>
     </div>
   </div>
   @endforeach
+@endsection
+
+@section('script')
+    function cancellaElemento(){
+      return confirm('Eliminare il fumetto?')
+    }
 @endsection
