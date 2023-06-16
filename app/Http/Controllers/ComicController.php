@@ -40,6 +40,20 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
+
+        $request->validate(
+            [
+                'title' => 'required'
+            ],
+            [
+                'title.required' => 'Inserisci il titolo!'
+            ]
+
+        );
+
+
+
+
         $form_data = $request->all();
 
         $newComic = new Comic();
